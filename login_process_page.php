@@ -28,7 +28,7 @@
  <th> Username </th>
  <th>email </th>
  <th> Password </th>
- <th> Delete </th>
+ <!-- <th> Delete </th> -->
  <th> Update </th>
 
   </tr >
@@ -46,7 +46,7 @@
  <td> <?php echo $result['username'];  ?> </td>
  <td><?php echo $result['email']; ?></td>
  <td> <?php echo $result['password'];  ?> </td>
- <td> <button class="btn-danger btn"> <a href="delete.php?id=<?php echo $result['id']; ?>" class="text-white"> Delete </a>  </button> </td>
+ <!-- <td> <button class="btn-danger btn"> <a href="delete.php?id=<?php echo $result['id']; ?>" class="text-white"> Delete </a>  </button> </td> -->
  <td> <button class="btn-primary btn"> <a href="update.php?id=<?php echo $result['id']; ?>" class="text-white"> Update </a> </button> </td>
 
   </tr>
