@@ -27,7 +27,7 @@
  <th> Username </th>
  <th>email </th>
  <th> Password </th>
- <th> Delete </th>
+ <!-- <th> Delete </th> -->
  <th> Update </th>
 
   </tr >
