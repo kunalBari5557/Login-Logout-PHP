@@ -33,7 +33,7 @@ if(isset($_GET['loginerror'])) {
   </div>
   <button type="submit" name="sublogin" class="btn btn-primary btn-group-lg form_btn">Login</button>
 </form>
-<p style="font-size: 12px;text-align: center;margin-top: 10px;"><a href="forgot-password.php" style="color: #00376b;">Forgot Password?</a> </p>
+<!-- <p style="font-size: 12px;text-align: center;margin-top: 10px;"><a href="forgot-password.php" style="color: #00376b;">Forgot Password?</a> </p> -->
    <br> 
     <p>Don't have an account? <a href="signup_page.php" >Sign Up</a> </p>
     </div>
