@@ -24,7 +24,7 @@ if(isset($_GET['loginerror'])) {
 }
  if(!empty($loginerror)){  echo '<p class="errmsg">Invalid login credentials, Please Try Again..</p>'; } ?>
 
-    <label class="label_txt">Username </label>
+    <label class="label_txt">Email </label>
     <input type="username" name="login_var" value="<?php if(!empty($loginerror)){ echo  $loginerror; } ?>" class="form-control" required="">
   </div>
   <div class="form-group">
