@@ -9,7 +9,7 @@ if (isset($_POST['sublogin'])){
 
  $login = $_POST['login_var'];
 $password = $_POST['password'];
-$query = "select * from data where email ='$login' &&  password = '$password' ";
+$query = "select * from data6 where email ='$login' &&  password = '$password' ";
   $data = mysqli_query($conn,$query);
   $result = mysqli_num_rows($data);
 

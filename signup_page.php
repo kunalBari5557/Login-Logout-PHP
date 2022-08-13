@@ -64,7 +64,7 @@ h1 {
   letter-spacing: 3px;  
   color: hotpink;  
  text-transform: uppercase;  
-padding-top: 50px;  
+padding-top: 20px;  
 }  
 a {  
   text-decoration: none;  
@@ -88,18 +88,30 @@ a:hover {
                     <div class="row">  
                         <div class="col-md-6">                         
                             <div class="form-group">  
-                                <input type="username" class="form-control" placeholder=" Username " value="" name="username" required >  
-                            </div>  
+                                <input type="text" class="form-control" placeholder=" Username " value="" name="username" required >  
+                            </div> 
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder=" Lastname " value="" name="lastname" required >  
+                            </div> 
                        
                                 
                              <div class="form-group">  
                                 <input type="Email" class="form-control" placeholder="Email " value="" name="email" required >  
+                             </div> 
+
+                             <div class="form-group">  
+                                <input type="text" class="form-control" placeholder="Address " value="" name="address" required >  
                              </div> 
                             
 
                         
                             <div class="form-group">  
                                 <input type="date" class="form-control" placeholder="Date" value="" name="dob" required>  
+                            </div> 
+
+                            <div class="form-group">  
+                                <input type="file" class="form-control" placeholder="Date" value="" name="profilepic" required>  
                             </div>  
                             
                      </div>  
@@ -110,6 +122,14 @@ a:hover {
                            <div class="row">
                              <div class="col-md-6">  
                                 <input type="password" class="form-control" placeholder="Password " value="" name="password" required>  
+                             </div>
+                            </div>
+                          </div>
+
+                         <div class="form-group">  
+                           <div class="row">
+                             <div class="col-md-6">  
+                                <input type="password" class="form-control" placeholder="Confirm Password " value="" name="cpassword" required>  
                              </div>
                             </div>
                           </div>

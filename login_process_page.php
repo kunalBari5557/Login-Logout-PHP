@@ -26,9 +26,14 @@
  <tr class="bg-dark text-white text-center">
  
  <th> Username </th>
- <th>email </th>
+ <th> LastName </th>
+ <th>Email </th>
+ <th> Address </th>
+ <th> DOB </th>
+ <th>Profile Pic </th>
  <th> Password </th>
- <!-- <th> Delete </th> -->
+ <th> Confirm Password </th>
+ <th> Delete </th>
  <th> Update </th>
 
   </tr >
@@ -36,7 +41,7 @@
   <?php
 
   include 'config_page.php'; 
- $query = "select * from data ";
+ $query = "select * from data6 ";
 
   $data = mysqli_query($conn,$query);
 
@@ -44,9 +49,14 @@
  ?>
  <tr class="text-center">
  <td> <?php echo $result['username'];  ?> </td>
- <td><?php echo $result['email']; ?></td>
- <td> <?php echo $result['password'];  ?> </td>
- <!-- <td> <button class="btn-danger btn"> <a href="delete.php?id=<?php echo $result['id']; ?>" class="text-white"> Delete </a>  </button> </td> -->
+ <td><?php echo $result['lastname']; ?></td>
+ <td> <?php echo $result['email'];  ?> </td>
+ <td> <?php echo $result['address'];  ?> </td>
+ <td><?php echo $result['dob']; ?></td>
+ <td> <?php echo $result['profilepic'];  ?> </td>
+ <td><?php echo $result['password']; ?></td>
+ <td> <?php echo $result['cpassword'];  ?> </td>
+ <td> <button class="btn-danger btn"> <a href="delete.php?id=<?php echo $result['id']; ?>" class="text-white"> Delete </a>  </button> </td>
  <td> <button class="btn-primary btn"> <a href="update.php?id=<?php echo $result['id']; ?>" class="text-white"> Update </a> </button> </td>
 
   </tr>
@@ -57,7 +67,7 @@
  
  </table>  
     <a href="logout1.php"><h3>logout</h3></a>
-    <!-- <h1 class="text-center"> Forget Password   <a href="forgot-password.php">Click Here...</a><br></h1> -->
+    <h1 class="text-center"> Forget Password   <a href="forgot-password.php">Click Here...</a><br></h1>
   </div>
  </div>
 

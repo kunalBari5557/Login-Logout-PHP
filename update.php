@@ -5,12 +5,18 @@
 
   $id = $_GET['id'];
  $username = $_POST['username'];
+ $lastname = $_POST['lastname'];
+ $email = $_POST['email'];
+ $address = $_POST['address'];
+ $dob = $_POST['dob'];
  $password = $_POST['password'];
- $q = " update data set id=$id, username='$username', password='$password' where id=$id  ";
+ $cpassword = $_POST['cpassword'];
+ $q = " update data6 set id=$id, username='$username', lastname='$lastname', email='$email', address='$address', dob= '$dob' 
+      password='$password', cpassword ='$cpassword ' where id=$id  ";
 
   mysqli_query($conn,$q);
 
-  header('location:display.php');
+  header('location:login_process_page.php');
  }
 
 ?>
@@ -41,8 +47,23 @@
   <label> Username: </label>
  <input type="text" name="username" class="form-control"> <br>
 
+ <label> LastName: </label>
+ <input type="text" name="lastname" class="form-control"> <br>
+
+ <label> Email: </label>
+ <input type="text" name="email" class="form-control"> <br>
+
+ <label> Address: </label>
+ <input type="text" name="address" class="form-control"> <br>
+
+ <label> DOB: </label>
+ <input type="text" name="dob" class="form-control"> <br>
+
   <label> Password: </label>
  <input type="text" name="password" class="form-control"> <br>
+
+  <label> Confirm Password: </label>
+ <input type="text" name="cpassword" class="form-control"> <br>
 
   <button class="btn btn-success" type="submit" name="done"> Submit </button><br>
 
