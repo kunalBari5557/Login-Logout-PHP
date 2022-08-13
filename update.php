@@ -10,7 +10,7 @@
 
   mysqli_query($conn,$q);
 
-  header('location:display.php');
+  header('location:login_process_page.php');
  }
 
 ?>
