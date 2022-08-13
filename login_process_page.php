@@ -67,7 +67,6 @@
  
  </table>  
     <a href="logout1.php"><h3>logout</h3></a>
-    <h1 class="text-center"> Forget Password   <a href="forgot-password.php">Click Here...</a><br></h1>
   </div>
  </div>
 
