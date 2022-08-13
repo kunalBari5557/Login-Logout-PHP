@@ -1,20 +1,12 @@
 <?php
 if (isset($_POST['submit'])) {
-    if (isset($_POST['username']) && isset($_POST['lastname'])
-     && isset($_POST['address']) && isset($_POST['email']) 
-     &&isset($_POST['dob']) && isset($_POST['password']) 
-     && isset($_POST['profilepic']) && isset($_POST['cpassword'])) {
+    if (isset($_POST['username']) && isset($_POST['lastname']) && isset($_POST['email']) &&
+        isset($_POST['dob']) && isset($_POST['password'])) {
         
-    	$file = addslashes(file_get_contents($_FILES['profilepic']['tmp_name']));
-
         $username = $_POST['username'];
-    	$lastname = $_POST['lastname'];
         $email = $_POST['email'];
-        $address = $_POST['address'];
         $dob = $_POST['dob'];
         $password = $_POST['password'];
-        $cpassword = $_POST['cpassword'];
-        $profilepic = $_POST['profilepic'];
 
         $host = "localhost";
         $dbUsername = "root";
@@ -28,7 +20,7 @@ if (isset($_POST['submit'])) {
         }
         else {
             $Select = "SELECT email FROM data WHERE email = ? LIMIT 1";
-            $Insert = "INSERT INTO data6 (username,lastname, email,address, dob,profilepic, password,cpassword) values(?, ?, ?, ?,?,?,?,?)";
+            $Insert = "INSERT INTO data (username, email, dob, password) values(?, ?, ?, ?)";
 
             $stmt = $conn->prepare($Select);
             $stmt->bind_param("s", $email);
@@ -42,7 +34,7 @@ if (isset($_POST['submit'])) {
                 $stmt->close();
 
                 $stmt = $conn->prepare($Insert);
-                $stmt->bind_param("ssssibss",$username,$lastname, $email,$address, $dob,$file, $password,$cpassword);
+                $stmt->bind_param("ssis",$username, $email, $dob, $password);
                 if ($stmt->execute()) {
                     echo "New record inserted sucessfully.";
                  

@@ -64,7 +64,7 @@ h1 {
   letter-spacing: 3px;  
   color: hotpink;  
  text-transform: uppercase;  
-padding-top: 20px;  
+padding-top: 50px;  
 }  
 a {  
   text-decoration: none;  
@@ -88,21 +88,20 @@ a:hover {
                     <div class="row">  
                         <div class="col-md-6">                         
                             <div class="form-group">  
-                                <input type="text" class="form-control" placeholder=" Username " value="" name="username" required >  
-                            </div> 
-
-                            <div class="form-group">
+                                <input type="username" class="form-control" placeholder=" Username " value="" name="username" required >  
+                            </div>  
+                            
+                            <div class="form-group">  
                                 <input type="text" class="form-control" placeholder=" Lastname " value="" name="lastname" required >  
                             </div> 
-                       
                                 
                              <div class="form-group">  
                                 <input type="Email" class="form-control" placeholder="Email " value="" name="email" required >  
                              </div> 
 
-                             <div class="form-group">  
+                            <div class="form-group">  
                                 <input type="text" class="form-control" placeholder="Address " value="" name="address" required >  
-                             </div> 
+                             </div>
                             
 
                         
@@ -112,7 +111,7 @@ a:hover {
 
                             <div class="form-group">  
                                 <input type="file" class="form-control" placeholder="Date" value="" name="profilepic" required>  
-                            </div>  
+                            </div> 
                             
                      </div>  
                  </div> 
@@ -133,6 +132,7 @@ a:hover {
                              </div>
                             </div>
                           </div>
+
                           <div class="row justify-content-start mt-4">  
             <div class="col">  
               <div class="form-check">  
